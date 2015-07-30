@@ -1,3 +1,5 @@
+**I HIGHLY reccommend downloading my [Soviet Rockets](https://github.com/KSP-RO/SovietRockets) to use with this. It is required to launch all of these probes and you need it to use the craft files.**
+
 **WARNING REGARDING VOSTOK/VOSKHOD: These two spacecraft are VERY heavy on cpu and RAM usage because of the level of detail in the models and textures. If you do not have a VERY powerful PC you will likely see a large amount of lag. If your game lags/hangs or crashes you can go into the "Kerbal Space Program\GameData\RN_Soyuz\Parts\7k" folder and delete ALL files with the name Vostok or Voskhod in them.**
 
 This is a salyut mod for the DOS & OPS style stations. It contains fully functional replicas of Salyut 1, 4, 6 and 7. It also now contains Almaz 2, 3 and 5. These can be used interchangeably with the other DOS/OPS stations of the same series although they may have had a different color scheme. *This pack now contains the Soyuz 7K-T, 7K-OKA, 7K-OKP 7K-T-AF and Progress 7K-TG spacecrafts. Now also contains Vostok and Voskhod spacecraft, and TKS/VA spacecraft.
