@@ -52,6 +52,7 @@ Unzip into your main KSP folder, overwrite if you have kosmos or module manager 
 * Salyut 4/6/7 solar arrays by KOSMOS: used under license terms
 * Original Salyut DOS models by MajorTom and Castorp: used under authorization 
 * Original Vostok models: Slavutinsky Victor
+* Original LOK/LK models, taken orbiter versions: Jean-Marie Le Cospérec
 * Firespitter - Snjo - License: You may reuse code and textures from this mod, as long as you give credit in the download file and on the download post/page. Reuse of models with permission. No reselling. No redistribution of the whole pack without permission. UV map texture guides are included so you can re-skin to your liking.
 
 ##LICENSE
