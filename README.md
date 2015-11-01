@@ -18,7 +18,7 @@ This is a salyut mod for the DOS & OPS style stations. It contains fully functio
 
 ![alt tag](http://i.imgur.com/1yCAxG2.png)
 
-![alt tag](http://i.imgur.com/DCuLNv5.png)
+![alt tag](http://i.imgur.com/y4c71qr.png)
 
 KOSMOS is a dependency for it's Salyut solar arrays. Before anyone complains that their license forbids redistributing, let me say that I read it VERY carefully. It is a BY NC ND, which means attribution with no derivatives. On the CC page for this it states "Share — copy and redistribute the material in any medium or format" and directly in the parts readme it says "You are permitted to redistribute the parts in their original form, so long as this readme is bundled with them." This means I can redistribute them without making any changes to the original parts as long as I include their original readme and this is what I have done. I tried contacting the original author Normak to confirm this just in case but as many of you know he has been gone a long time and that is not really an option.
 
