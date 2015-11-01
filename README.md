@@ -10,7 +10,7 @@ This is a salyut mod for the DOS & OPS style stations. It contains fully functio
 
 **Vostok Album:** http://imgur.com/a/bFEHN
 
-**LOK/LK Album:** http://imgur.com/a/M5NNP
+**LOK/LK Album:** http://imgur.com/a/xXRdw
 
 ![alt tag](http://i.imgur.com/ERD8gW4.png)
 
