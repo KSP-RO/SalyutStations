@@ -23,7 +23,7 @@ This is a salyut mod for the DOS & OPS style stations. It contains fully functio
 KOSMOS is a dependency for it's Salyut solar arrays. Before anyone complains that their license forbids redistributing, let me say that I read it VERY carefully. It is a BY NC ND, which means attribution with no derivatives. On the CC page for this it states "Share — copy and redistribute the material in any medium or format" and directly in the parts readme it says "You are permitted to redistribute the parts in their original form, so long as this readme is bundled with them." This means I can redistribute them without making any changes to the original parts as long as I include their original readme and this is what I have done. I tried contacting the original author Normak to confirm this just in case but as many of you know he has been gone a long time and that is not really an option.
 
 ##Remotetech Support:
-* If you use remotetech, here is a module manager config to make the stations compatible: [https://www.mediafire.com/?kq0l7fm1g5qjl59](https://www.mediafire.com/?kq0l7fm1g5qjl59)
+* If you use remotetech, here is a module manager config to make the stations compatible: [https://www.dropbox.com/s/6h8vu19gzxkr413/Salyut_Soyuz_RT.cfg?dl=0](https://www.dropbox.com/s/6h8vu19gzxkr413/Salyut_Soyuz_RT.cfg?dl=0)
 
 ##INSTALL:
 
