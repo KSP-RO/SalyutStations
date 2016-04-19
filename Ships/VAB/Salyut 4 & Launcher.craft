@@ -1,6 +1,6 @@
 ship = Salyut 4 & Launcher
-version = 1.0.2
-description = 
+version = 1.1.0
+description = It needs three large solar panels to power 2000kg of scientific instruments including a solar telescope, an ultraviolet spectrometer and and two x-ray telescopes.
 type = VAB
 size = 11.012,50.94788,9.688896
 PART

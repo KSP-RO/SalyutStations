@@ -1,6 +1,6 @@
 ship = Salyut 1 & Launcher
-version = 1.0.2
-description = 
+version = 1.1.0
+description = The first space station of any kind, the heritage of the Salyut is still in use on the ISS.
 type = VAB
 size = 11.012,50.10678,9.688898
 PART

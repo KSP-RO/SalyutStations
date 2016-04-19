@@ -1,6 +1,6 @@
 ship = Salyut 6
-version = 0.90.0
-description = 
+version = 1.1.0
+description = Adds a second docking port, a new main propulsion system, the BST-1M multispectral telescope and the MKF-6M multispectral camera to carry out Earth-resources observations.
 type = VAB
 size = 3.352002,11.99427,3.575202
 PART

@@ -1,6 +1,6 @@
 ship = Salyut 7 & Launcher
-version = 1.0.2
-description = 
+version = 1.1.0
+description = It has two docking ports, three solar panels, electric stoves, a refrigerator, constant hot water and redesigned seats at the command console!
 type = VAB
 size = 11.012,50.36522,9.688897
 PART
