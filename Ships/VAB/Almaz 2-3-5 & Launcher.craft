@@ -1,6 +1,6 @@
 ship = Almaz 2-3-5 & Launcher
-version = 1.0.2
-description = 
+version = 1.1.0
+description = Three crewed Almaz military reconnaissance stations were launched between 1973 and 1976. To cover the military nature of the program they were designated as civilian Salyut space stations.
 type = VAB
 size = 11.012,50.4374,9.688897
 PART
