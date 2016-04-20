@@ -24,9 +24,9 @@ PART
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = salyut.asas_4293309634
-	link = Kosmos.TKS.Solar.Array.rn_4293309598
-	link = Kosmos.TKS.Solar.Array.rn_4293309524
-	link = Kosmos.TKS.Solar.Array.rn_4293309450
+	link = Kosmos.Salyut.Solar.Array.rn_4293309598
+	link = Kosmos.Salyut.Solar.Array.rn_4293309524
+	link = Kosmos.Salyut.Solar.Array.rn_4293309450
 	link = s1.dp_4293288042
 	attN = top,s1.dp_4293288042
 	EVENTS
@@ -931,7 +931,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309598
+	part = Kosmos.Salyut.Solar.Array.rn_4293309598
 	partName = Part
 	pos = -1.175217,13.22129,0.0003640652
 	attPos = -1.175154,-4.200001,0
@@ -1011,7 +1011,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309524
+	part = Kosmos.Salyut.Solar.Array.rn_4293309524
 	partName = Part
 	pos = 1.175165,13.15705,0.0003641402
 	attPos = 1.175228,-4.264239,7.500057E-08
@@ -1091,7 +1091,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309450
+	part = Kosmos.Salyut.Solar.Array.rn_4293309450
 	partName = Part
 	pos = -6.305226E-05,13.15937,-1.175102
 	attPos = -1.097651E-07,-4.261919,-1.175466

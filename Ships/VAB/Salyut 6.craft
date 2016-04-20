@@ -26,9 +26,9 @@ PART
 	link = s6.dp_4293744818
 	link = s6.dp_4293744762
 	link = salyut.asas_4293744706
-	link = Kosmos.TKS.Solar.Array.rn_4293744672
-	link = Kosmos.TKS.Solar.Array.rn_4293744598
-	link = Kosmos.TKS.Solar.Array.rn_4293744524
+	link = Kosmos.Salyut.Solar.Array.rn_4293744672
+	link = Kosmos.Salyut.Solar.Array.rn_4293744598
+	link = Kosmos.Salyut.Solar.Array.rn_4293744524
 	attN = top,s6.dp_4293744762
 	attN = bottom,s6.dp_4293744818
 	EVENTS
@@ -1215,7 +1215,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293744672
+	part = Kosmos.Salyut.Solar.Array.rn_4293744672
 	partName = Part
 	pos = 1.565159E-05,11.14987,-1.051111
 	attPos = -9.893847E-08,-4.23048,-1.051105
@@ -1295,7 +1295,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293744598
+	part = Kosmos.Salyut.Solar.Array.rn_4293744598
 	partName = Part
 	pos = 1.051571,11.20166,-5.952586E-06
 	attPos = 1.051556,-4.17869,6.748314E-08
@@ -1375,7 +1375,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293744524
+	part = Kosmos.Salyut.Solar.Array.rn_4293744524
 	partName = Part
 	pos = -1.052005,11.20754,-5.952481E-06
 	attPos = -1.052021,-4.172811,6.758819E-08
