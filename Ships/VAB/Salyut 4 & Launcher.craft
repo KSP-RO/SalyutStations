@@ -25,9 +25,9 @@ PART
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = salyut.asas_4293309634
-	link = Kosmos.TKS.Solar.Array.rn_4293309598
-	link = Kosmos.TKS.Solar.Array.rn_4293309524
-	link = Kosmos.TKS.Solar.Array.rn_4293309450
+	link = Kosmos.TKS.Solar.Array.rn2_4293309598
+	link = Kosmos.TKS.Solar.Array.rn2_4293309524
+	link = Kosmos.TKS.Solar.Array.rn2_4293309450
 	link = s1.dp_4293288042
 	link = rn.protonk.stg3.decoupler_4293533272
 	link = rn.salyut467.fairing_4293520582
@@ -1150,7 +1150,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309598
+	part = Kosmos.TKS.Solar.Array.rn2_4293309598
 	partName = Part
 	pos = -1.175248,43.08009,0.0003647813
 	attPos = -1.175154,-4.200001,0
@@ -1231,7 +1231,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309524
+	part = Kosmos.TKS.Solar.Array.rn2_4293309524
 	partName = Part
 	pos = 1.175134,43.01585,0.0003648563
 	attPos = 1.175228,-4.264239,7.500057E-08
@@ -1312,7 +1312,7 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn_4293309450
+	part = Kosmos.TKS.Solar.Array.rn2_4293309450
 	partName = Part
 	pos = -9.439389E-05,43.01817,-1.175101
 	attPos = -1.097651E-07,-4.261919,-1.175466
