@@ -1,0 +1,37 @@
+{
+    "NAME":"Salyut Stations",
+    "URL":"http://raw.githubusercontent.com/KSP-RO/SalyutStations/master/GameData/RN_Salyut/SalyutStations.version",
+    "DOWNLOAD":"https://github.com/KSP-RO/SalyutStations/releases",
+    "GITHUB":
+    {
+        "USERNAME":"raidernick",
+        "REPOSITORY":"SalyutStations",
+        "ALLOW_PRE_RELEASE":false,
+    },
+    "VERSION":
+    {
+        "MAJOR": 2,
+        "MINOR": 8,
+        "PATCH": 0,
+        "BUILD": 0
+    },
+    "KSP_VERSION":
+    {
+        "MAJOR": 1,
+        "MINOR": 2,
+        "PATCH": 2,
+		"BUILD": 0
+    },
+	"KSP_VERSION_MIN": {
+		"MAJOR": 1,
+		"MINOR": 2,
+		"PATCH": 0,
+		"BUILD": 0
+	},
+	"KSP_VERSION_MAX": {
+		"MAJOR": 1,
+		"MINOR": 2,
+		"PATCH": 2,
+		"BUILD": 0
+	}
+}
