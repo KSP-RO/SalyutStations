@@ -1,15 +1,20 @@
 ship = RN Stock Salyut 6
-version = 1.2.0
+version = 1.3.1
 description = 
 type = VAB
-size = 6.42878437,47.9310379,5.96006584
+size = 5.98198318,46.1259918,5.54584217
+persistentId = 1962310104
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Debris
 PART
 {
-	part = salyut6_4293317286
+	part = salyut6_4293127704
 	partName = Part
-	pos = 0.118901975,46.981514,-0.00715837907
+	persistentId = 4248617509
+	pos = -5.88848116E-06,44.8831749,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = 0.118901975,46.981514,-0.00715837907
+	attPos0 = -5.88848116E-06,44.8831749,-2.26442371E-05
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -27,18 +32,18 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = s6.dp_4293292304
-	link = s6.dp_4293287932
-	link = Kosmos.TKS.Solar.Array.rn2_4293268064
-	link = Kosmos.TKS.Solar.Array.rn2_4293273136
-	link = Kosmos.TKS.Solar.Array.rn2_4293267906
-	link = salyut.asas_4293262978
-	link = rn.salyut467.fairing_4293191282
-	link = rn.salyut467.fairing_4293189946
-	attN = top,s6.dp_4293292304
-	attN = bottom,s6.dp_4293287932
-	attN = fairing1,rn.salyut467.fairing_4293191282
-	attN = fairing2,rn.salyut467.fairing_4293189946
+	link = s6.dp_4293112694
+	link = s6.dp_4293108320
+	link = Kosmos.TKS.Solar.Array.rn2_4293077900
+	link = Kosmos.TKS.Solar.Array.rn2_4293077816
+	link = Kosmos.TKS.Solar.Array.rn2_4293068252
+	link = salyut.asas_4293065282
+	link = rn.salyut467.fairing_4292991440
+	link = rn.salyut467.fairing_4292986952
+	attN = top,s6.dp_4293112694_0|0.154776|0
+	attN = bottom,s6.dp_4293108320_0|-11.24522|0
+	attN = fairing1,rn.salyut467.fairing_4292991440_-1.66|-6.725216|0
+	attN = fairing2,rn.salyut467.fairing_4292986952_1.66|-6.725216|0
 	EVENTS
 	{
 	}
@@ -60,6 +65,10 @@ PART
 		}
 		ACTIONS
 		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
 			HibernateToggle
 			{
 				actionGroup = None
@@ -341,479 +350,14 @@ PART
 	}
 	MODULE
 	{
-		name = MechJebCore
+		name = ReflectiveShaderModule
 		isEnabled = True
-		running = True
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-			}
-		}
-		MechJebLocalSettings
-		{
-			MechJebModuleMenu
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentGuidance
-			{
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleAscentNavBall
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAscentPathEditor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeAdjustment
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleCustomWindowEditor
-			{
-				unlockParts = 
-				unlockTechs = flightControl
-			}
-			MechJebModuleDebugArrows
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleDockingAutopilot
-			{
-				forceRol = False
-				overrideSafeDistance = False
-				overrideTargetSize = False
-				unlockParts = 
-				unlockTechs = 
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleDockingGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleInfoItems
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleLandingAutopilot
-			{
-				deployGears = True
-				deployChutes = True
-				rcsAdjustment = True
-				unlockParts = 
-				unlockTechs = 
-				touchdownSpeed
-				{
-					_val = 0.5
-					_text = 0.5
-				}
-				limitGearsStage
-				{
-					val = 0
-					_text = 0
-				}
-				limitChutesStage
-				{
-					val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleLandingGuidance
-			{
-				landingSiteIdx = 0
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleLandingPredictions
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleManeuverPlanner
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleNodeEditor
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleNodeExecutor
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRCSBalancerWindow
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleRendezvousAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleRendezvousAutopilotWindow
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleRendezvousGuidance
-			{
-				unlockParts = 
-				unlockTechs = advUnmanned
-			}
-			MechJebModuleRoverController
-			{
-				ControlHeading = False
-				ControlSpeed = False
-				BrakeOnEject = False
-				BrakeOnEnergyDepletion = False
-				WarpToDaylight = True
-				StabilityControl = False
-				LimitAcceleration = False
-				unlockParts = 
-				unlockTechs = 
-				heading
-				{
-					_val = 0
-					_text = 0
-				}
-				speed
-				{
-					_val = 10
-					_text = 10
-				}
-			}
-			MechJebModuleRoverWindow
-			{
-				unlockParts = 
-				unlockTechs = fieldScience
-			}
-			MechJebModuleScript
-			{
-				minifiedGUI = False
-				selectedSlot = 0
-				activeSavepoint = -1
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSettings
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSmartASS
-			{
-				mode = ORBITAL
-				target = OFF
-				advReference = INERTIAL
-				advDirection = FORWARD
-				forceRol = False
-				forcePitch = True
-				forceYaw = True
-				unlockParts = 
-				unlockTechs = flightControl
-				srfHdg
-				{
-					_val = 90
-					_text = 90
-				}
-				srfPit
-				{
-					_val = 90
-					_text = 90
-				}
-				srfRol
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelYaw
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelPit
-				{
-					_val = 0
-					_text = 0
-				}
-				srfVelRol
-				{
-					_val = 0
-					_text = 0
-				}
-				rol
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleSmartRcs
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneAutopilot
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSpaceplaneGuidance
-			{
-				runwayIndex = 0
-				unlockParts = 
-				unlockTechs = unmannedTech
-			}
-			MechJebModuleStageStats
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleTargetController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustWindow
-			{
-				autostageSavedState = False
-				unlockParts = 
-				unlockTechs = advFlightControl
-			}
-			MechJebModuleTranslatron
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				trans_spd
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleWarpHelper
-			{
-				unlockParts = 
-				unlockTechs = advFlightControl
-				phaseAngle
-				{
-					_val = 0
-					_text = 0
-				}
-			}
-			MechJebModuleWaypointWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleWaypointHelpWindow
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			ModExtensionDemo
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleCustomInfoWindow
-			{
-			}
-			MechJebModuleWarpController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleSolarPanelController
-			{
-				prev_ShouldOpenSolarPanels = False
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleThrustController
-			{
-				limitThrottle = False
-				limiterMinThrottle = False
-				electricThrottle = False
-				unlockParts = 
-				unlockTechs = 
-				maxThrottle
-				{
-					_val = 1
-					_text = 100
-				}
-				minThrottle
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleLo
-				{
-					_val = 0.050000000000000003
-					_text = 5
-				}
-				electricThrottleHi
-				{
-					_val = 0.14999999999999999
-					_text = 15
-				}
-			}
-			MechJebModuleRCSController
-			{
-				unlockParts = 
-				unlockTechs = 
-				Tf
-				{
-					_val = 1
-					_text = 1
-				}
-				Kp
-				{
-					_val = 0.125
-					_text = 0.125
-				}
-				Ki
-				{
-					_val = 0.070000000000000007
-					_text = 0.07
-				}
-				Kd
-				{
-					_val = 0.53000000000000003
-					_text = 0.53
-				}
-			}
-			MechJebModuleRCSBalancer
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleAttitudeController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleStagingController
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorder
-			{
-				markUT = 0
-				deltaVExpended = 0
-				dragLosses = 0
-				gravityLosses = 0
-				steeringLosses = 0
-				markLAN = 0
-				markLatitude = 0
-				markLongitude = 0
-				markAltitude = 0
-				markBodyIndex = 1
-				maxDragGees = 0
-				unlockParts = 
-				unlockTechs = 
-			}
-			MechJebModuleFlightRecorderGraph
-			{
-				unlockParts = 
-				unlockTechs = 
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -863,9 +407,10 @@ PART
 }
 PART
 {
-	part = s6.dp_4293292304
+	part = s6.dp_4293112694
 	partName = Part
-	pos = 0.118901975,47.1362915,-0.00715837907
+	persistentId = 560348490
+	pos = -5.88848116E-06,45.0379486,-2.26442371E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.15477562,0
 	rot = 0,0,0,1
@@ -885,7 +430,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,salyut6_4293317286
+	attN = bottom,salyut6_4293127704_0|0|0
 	EVENTS
 	{
 	}
@@ -917,6 +462,10 @@ PART
 			{
 				actionGroup = None
 			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
 			EnableXFeedAction
 			{
 				actionGroup = None
@@ -937,9 +486,10 @@ PART
 }
 PART
 {
-	part = s6.dp_4293287932
+	part = s6.dp_4293108320
 	partName = Part
-	pos = 0.118901975,35.73629,-0.00715837907
+	persistentId = 1665496431
+	pos = -5.88848116E-06,33.6379509,-2.26442371E-05
 	attPos = 0,0,0
 	attPos0 = 0,-11.245224,0
 	rot = 0,0,1,0
@@ -959,9 +509,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.protonk.stg3.decoupler_4293230584
-	attN = bottom,salyut6_4293317286
-	attN = top,rn.protonk.stg3.decoupler_4293230584
+	link = rn.protonk.stg3.decoupler.s67_4293036352
+	attN = bottom,salyut6_4293127704_0|0|0
+	attN = top,rn.protonk.stg3.decoupler.s67_4293036352_0|0.128488|0
 	EVENTS
 	{
 	}
@@ -993,6 +543,10 @@ PART
 			{
 				actionGroup = None
 			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
 			EnableXFeedAction
 			{
 				actionGroup = None
@@ -1013,14 +567,15 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn2_4293268064
+	part = Kosmos.TKS.Solar.Array.rn2_4293077900
 	partName = Part
-	pos = 0.118902072,42.7938538,-1.0558815
-	attPos = 0,0,0.08253479
-	attPos0 = 9.68575478E-08,-4.18766022,-1.13125789
-	rot = -2.12645614E-06,0.707106829,2.12645591E-06,-0.707106709
-	attRot = 0,0,0,0.999999881
-	attRot0 = -2.12645614E-06,0.707106829,2.12645591E-06,-0.707106709
+	persistentId = 4035938189
+	pos = -1.06951606,40.6996002,-2.25767017E-05
+	attPos = 0.0635470152,0,0
+	attPos0 = -1.13305724,-4.18357468,6.75354386E-08
+	rot = -8.03887325E-14,0,-1.05581171E-06,-1
+	attRot = 0,0,0,-0.999999881
+	attRot0 = -8.03887325E-14,0,-1.05581171E-06,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1035,7 +590,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	srfN = srfAttach,salyut6_4293317286
+	sym = Kosmos.TKS.Solar.Array.rn2_4293077816
+	srfN = srfAttach,salyut6_4293127704
 	EVENTS
 	{
 	}
@@ -1081,14 +637,15 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn2_4293273136
+	part = Kosmos.TKS.Solar.Array.rn2_4293077816
 	partName = Part
-	pos = -0.937834501,42.8027649,-0.00715831155
-	attPos = 0.0769094229,0,0
-	attPos0 = -1.13364589,-4.17874908,6.75208867E-08
-	rot = 4.01943663E-14,0,1.06749553E-06,1
-	attRot = 0,0,0,0.999999881
-	attRot0 = 4.01943663E-14,0,1.06749553E-06,1
+	persistentId = 4286194207
+	pos = 1.06950438,40.6996002,-2.28052722E-05
+	attPos = -0.0635470152,0,5.55564839E-09
+	attPos0 = 1.13305724,-4.18357468,-1.66590553E-07
+	rot = -1.05581171E-06,-1,1.26539729E-13,4.37113883E-08
+	attRot = 0,0,0,-0.999999881
+	attRot0 = -1.05581171E-06,-1,1.26539729E-13,4.37113883E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1103,8 +660,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Kosmos.TKS.Solar.Array.rn2_4293267906
-	srfN = srfAttach,salyut6_4293317286
+	sym = Kosmos.TKS.Solar.Array.rn2_4293077900
+	srfN = srfAttach,salyut6_4293127704
 	EVENTS
 	{
 	}
@@ -1150,14 +707,15 @@ PART
 }
 PART
 {
-	part = Kosmos.TKS.Solar.Array.rn2_4293267906
+	part = Kosmos.TKS.Solar.Array.rn2_4293068252
 	partName = Part
-	pos = 1.17563844,42.8027649,-0.00715853879
-	attPos = -0.0769094229,0,6.98491931E-09
-	attPos0 = 1.13364589,-4.17874908,-1.66706741E-07
-	rot = 1.06749553E-06,1,-8.68560798E-14,-4.37113883E-08
+	persistentId = 481219683
+	pos = -5.78958588E-06,40.6832924,-1.0678066
+	attPos = 0,0.0594406128,0.0634462833
+	attPos0 = 9.88952706E-08,-4.25932312,-1.13123024
+	rot = -2.04256844E-06,0.707106829,2.04256821E-06,-0.707106709
 	attRot = 0,0,0,0.999999881
-	attRot0 = 1.06749553E-06,1,-8.68560798E-14,-4.37113883E-08
+	attRot0 = -2.04256844E-06,0.707106829,2.04256821E-06,-0.707106709
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1172,8 +730,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Kosmos.TKS.Solar.Array.rn2_4293273136
-	srfN = srfAttach,salyut6_4293317286
+	srfN = srfAttach,salyut6_4293127704
 	EVENTS
 	{
 	}
@@ -1219,14 +776,15 @@ PART
 }
 PART
 {
-	part = salyut.asas_4293262978
+	part = salyut.asas_4293065282
 	partName = Part
-	pos = 0.118901975,42.7776642,1.12801254
+	persistentId = 3058017096
+	pos = -5.88848116E-06,41.1667328,1.13286877
 	attPos = 0,0,0
-	attPos0 = 0,-4.20384979,1.13517094
-	rot = 3.15583293E-06,6.95826641E-09,-2.19591259E-14,1
+	attPos0 = 0,-3.71644211,1.13289142
+	rot = 3.03719798E-06,6.12646334E-09,-1.86072827E-14,1
 	attRot = 0,0,0,1
-	attRot0 = 3.15583293E-06,6.95826641E-09,-2.19591259E-14,1
+	attRot0 = 3.03719798E-06,6.12646334E-09,-1.86072827E-14,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1241,7 +799,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	srfN = srfAttach,salyut6_4293317286
+	srfN = srfAttach,salyut6_4293127704
 	EVENTS
 	{
 	}
@@ -1263,6 +821,10 @@ PART
 		}
 		ACTIONS
 		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
 			HibernateToggle
 			{
 				actionGroup = None
@@ -1284,82 +846,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MechJebCore
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnOrbitProgradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRetrogradeAction
-			{
-				actionGroup = None
-			}
-			OnOrbitNormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitAntinormalAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialInAction
-			{
-				actionGroup = None
-			}
-			OnOrbitRadialOutAction
-			{
-				actionGroup = None
-			}
-			OnKillRotationAction
-			{
-				actionGroup = None
-			}
-			OnDeactivateSmartASSAction
-			{
-				actionGroup = None
-			}
-			OnPanicAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronOffAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronKeepVertAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronZeroSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronPlusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronMinusOneSpeedAction
-			{
-				actionGroup = None
-			}
-			OnTranslatronToggleHSAction
-			{
-				actionGroup = None
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1398,11 +884,12 @@ PART
 }
 PART
 {
-	part = rn.protonk.stg3.decoupler_4293230584
+	part = rn.protonk.stg3.decoupler.s67_4293036352
 	partName = Part
-	pos = 0.118901975,33.8203812,-0.00715837907
+	persistentId = 572248261
+	pos = -5.88848116E-06,31.213131,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = 0,1.91591072,0
+	attPos0 = 0,2.42481995,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,-1,0
@@ -1420,11 +907,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.protonk.stg3_4293230426
-	link = rn.proton.stg3.adapt_4293183278
-	attN = top,s6.dp_4293287932
-	attN = top2,rn.proton.stg3.adapt_4293183278
-	attN = bottom,rn.protonk.stg3_4293230426
+	link = rn.protonk.stg3_4293007042
+	attN = top,s6.dp_4293108320_0|2.296333|0
+	attN = bottom,rn.protonk.stg3_4293007042_0|0.918798|0
 	EVENTS
 	{
 	}
@@ -1458,9 +943,10 @@ PART
 }
 PART
 {
-	part = rn.protonk.stg3_4293230426
+	part = rn.protonk.stg3_4293007042
 	partName = Part
-	pos = 0.118901975,33.8203812,-0.00715837907
+	persistentId = 412780193
+	pos = -5.88848116E-06,31.213131,-2.26442371E-05
 	attPos = 0,0,0
 	attPos0 = 0,0,0
 	rot = 0,0,0,1
@@ -1480,19 +966,19 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.proton.rd0212_4293230326
-	link = rn.proton.vernier_4293230220
-	link = rn.proton.vernier_4293230152
-	link = rn.proton.vernier_4293230084
-	link = rn.proton.vernier_4293230016
-	link = rn.proton.stg2.adapt_4293229948
-	attN = top,rn.protonk.stg3.decoupler_4293230584
-	attN = bottom,rn.proton.stg2.adapt_4293229948
-	attN = eng,rn.proton.rd0212_4293230326
-	attN = v1,rn.proton.vernier_4293230084
-	attN = v2,rn.proton.vernier_4293230016
-	attN = v3,rn.proton.vernier_4293230220
-	attN = v4,rn.proton.vernier_4293230152
+	link = rn.proton.rd0212_4293006944
+	link = rn.proton.vernier_4293006840
+	link = rn.proton.vernier_4293006774
+	link = rn.proton.vernier_4293006708
+	link = rn.proton.vernier_4293006642
+	link = rn.proton.stg2.adapt_4293006576
+	attN = top,rn.protonk.stg3.decoupler.s67_4293036352_0|0.918798|0
+	attN = bottom,rn.proton.stg2.adapt_4293006576_0|-3.649071|0
+	attN = eng,rn.proton.rd0212_4293006944_0|-1.418417|0
+	attN = v1,rn.proton.vernier_4293006708_0|-1.492448|-1.590485
+	attN = v2,rn.proton.vernier_4293006642_0|-1.492448|1.590485
+	attN = v3,rn.proton.vernier_4293006840_-1.590485|-1.492448|0
+	attN = v4,rn.proton.vernier_4293006774_1.590485|-1.492448|0
 	EVENTS
 	{
 	}
@@ -1572,11 +1058,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd0212_4293230326
+	part = rn.proton.rd0212_4293006944
 	partName = Part
-	pos = 0.118901975,31.4953499,-0.00715837907
+	persistentId = 1042964074
+	pos = -5.88848116E-06,29.0496902,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = 0,-2.32503128,0
+	attPos0 = 0,-2.1634407,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -1594,7 +1081,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,rn.protonk.stg3_4293230426
+	attN = top,rn.protonk.stg3_4293007042_0|0.7450253|0
 	EVENTS
 	{
 	}
@@ -1682,11 +1169,12 @@ PART
 }
 PART
 {
-	part = rn.proton.vernier_4293230220
+	part = rn.proton.vernier_4293006840
 	partName = Part
-	pos = -1.59037817,32.2164612,-0.00715837907
+	persistentId = 215506415
+	pos = -1.59049106,29.7206841,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = -1.70928001,-1.60391808,0
+	attPos0 = -1.5904851,-1.4924469,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -1704,8 +1192,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.vernier_4293230152
-	attN = top,rn.protonk.stg3_4293230426
+	sym = rn.proton.vernier_4293006774
+	attN = top,rn.protonk.stg3_4293007042_0|0|0
 	EVENTS
 	{
 	}
@@ -1824,11 +1312,12 @@ PART
 }
 PART
 {
-	part = rn.proton.vernier_4293230152
+	part = rn.proton.vernier_4293006774
 	partName = Part
-	pos = 1.82818198,32.2164612,-0.00715837907
+	persistentId = 2445235293
+	pos = 1.59047925,29.7206841,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = 1.70928001,-1.60391808,0
+	attPos0 = 1.5904851,-1.4924469,0
 	rot = 0,1,0,-4.37113883E-08
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.37113883E-08
@@ -1846,8 +1335,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.vernier_4293230220
-	attN = top,rn.protonk.stg3_4293230426
+	sym = rn.proton.vernier_4293006840
+	attN = top,rn.protonk.stg3_4293007042_0|0|0
 	EVENTS
 	{
 	}
@@ -1966,11 +1455,12 @@ PART
 }
 PART
 {
-	part = rn.proton.vernier_4293230084
+	part = rn.proton.vernier_4293006708
 	partName = Part
-	pos = 0.118901975,32.2164612,-1.71643829
+	persistentId = 2797223943
+	pos = -5.88848116E-06,29.7206841,-1.59050775
 	attPos = 0,0,0
-	attPos0 = 0,-1.60391808,-1.70928001
+	attPos0 = 0,-1.4924469,-1.5904851
 	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,-0.707106829,0,0.707106829
@@ -1988,8 +1478,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.vernier_4293230016
-	attN = top,rn.protonk.stg3_4293230426
+	sym = rn.proton.vernier_4293006642
+	attN = top,rn.protonk.stg3_4293007042_0|0|0
 	EVENTS
 	{
 	}
@@ -2108,11 +1598,12 @@ PART
 }
 PART
 {
-	part = rn.proton.vernier_4293230016
+	part = rn.proton.vernier_4293006642
 	partName = Part
-	pos = 0.118901975,32.2164612,1.70212162
+	persistentId = 3288797378
+	pos = -5.88848116E-06,29.7206841,1.59046245
 	attPos = 0,0,0
-	attPos0 = 0,-1.60391808,1.70928001
+	attPos0 = 0,-1.4924469,1.5904851
 	rot = 0,0.707106888,0,0.707106769
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,0.707106888,0,0.707106769
@@ -2130,8 +1621,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.vernier_4293230084
-	attN = top,rn.protonk.stg3_4293230426
+	sym = rn.proton.vernier_4293006708
+	attN = top,rn.protonk.stg3_4293007042_0|0|0
 	EVENTS
 	{
 	}
@@ -2250,11 +1741,12 @@ PART
 }
 PART
 {
-	part = rn.proton.stg2.adapt_4293229948
+	part = rn.proton.stg2.adapt_4293006576
 	partName = Part
-	pos = 0.125301957,30.5219154,-0.000758389942
+	persistentId = 1419733416
+	pos = 0.00594933098,28.1439114,0.00593257509
 	attPos = 0,0,0
-	attPos0 = 0.0064000003,-3.29846573,0.0064000003
+	attPos0 = 0.00595520064,-3.06921959,0.00595520064
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2272,9 +1764,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.protonk.stg2_4293229646
-	attN = top,rn.protonk.stg3_4293230426
-	attN = bottom,rn.protonk.stg2_4293229646
+	link = rn.protonk.stg2_4293006276
+	attN = top,rn.protonk.stg3_4293007042_-0.005955201|-0.5798504|-0.005955201
+	attN = bottom,rn.protonk.stg2_4293006276_0|-1.558617|0
 	EVENTS
 	{
 	}
@@ -2353,11 +1845,12 @@ PART
 }
 PART
 {
-	part = rn.protonk.stg2_4293229646
+	part = rn.protonk.stg2_4293006276
 	partName = Part
-	pos = 0.125301957,24.6288033,-0.000758389942
+	persistentId = 3228469511
+	pos = 0.00594933098,22.6603699,0.00593257509
 	attPos = 0,0,0
-	attPos0 = 0,-5.89311218,0
+	attPos0 = 0,-5.48354149,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2375,17 +1868,17 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.proton.rd0210_4293229540
-	link = rn.proton.rd0210_4293229418
-	link = rn.proton.rd0210_4293229296
-	link = rn.proton.rd0210_4293229174
-	link = rn.proton.stg1.adapt_4293229052
-	attN = top,rn.proton.stg2.adapt_4293229948
-	attN = bottom,rn.proton.stg1.adapt_4293229052
-	attN = eng1,rn.proton.rd0210_4293229296
-	attN = eng2,rn.proton.rd0210_4293229174
-	attN = eng3,rn.proton.rd0210_4293229540
-	attN = eng4,rn.proton.rd0210_4293229418
+	link = rn.proton.rd0210_4293006172
+	link = rn.proton.rd0210_4293006052
+	link = rn.proton.rd0210_4293005932
+	link = rn.proton.rd0210_4293005812
+	link = rn.proton.stg1.adapt_4293005692
+	attN = top,rn.proton.stg2.adapt_4293006576_0|3.924924|0
+	attN = bottom,rn.proton.stg1.adapt_4293005692_0|-4.099731|0
+	attN = eng1,rn.proton.rd0210_4293005932_-0.63274|-5.174912|-0.684848
+	attN = eng2,rn.proton.rd0210_4293005812_0.63274|-5.174912|0.684848
+	attN = eng3,rn.proton.rd0210_4293006172_-0.63274|-5.174912|0.684848
+	attN = eng4,rn.proton.rd0210_4293006052_0.63274|-5.174912|-0.684848
 	EVENTS
 	{
 	}
@@ -2420,11 +1913,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd0210_4293229540
+	part = rn.proton.rd0210_4293006172
 	partName = Part
-	pos = -0.55469811,18.163372,0.735241592
+	persistentId = 3004493455
+	pos = -0.626790702,16.6442871,0.690780401
 	attPos = 0,0,0
-	attPos0 = -0.680000007,-6.46543121,0.736000001
+	attPos0 = -0.632740021,-6.01608276,0.684848011
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2442,8 +1936,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd0210_4293229418
-	attN = top,rn.protonk.stg2_4293229646
+	sym = rn.proton.rd0210_4293006052
+	attN = top,rn.protonk.stg2_4293006276_0|0.841172|0
 	EVENTS
 	{
 	}
@@ -2577,11 +2071,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd0210_4293229418
+	part = rn.proton.rd0210_4293006052
 	partName = Part
-	pos = 0.805302024,18.163372,-0.736758471
+	persistentId = 688913065
+	pos = 0.638689339,16.6442871,-0.678915262
 	attPos = 0,0,0
-	attPos0 = 0.680000007,-6.46543121,-0.736000001
+	attPos0 = 0.632740021,-6.01608276,-0.684848011
 	rot = 0,1,0,-4.37113883E-08
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.37113883E-08
@@ -2599,8 +2094,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd0210_4293229540
-	attN = top,rn.protonk.stg2_4293229646
+	sym = rn.proton.rd0210_4293006172
+	attN = top,rn.protonk.stg2_4293006276_0|0.841172|0
 	EVENTS
 	{
 	}
@@ -2734,11 +2229,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd0210_4293229296
+	part = rn.proton.rd0210_4293005932
 	partName = Part
-	pos = -0.55469811,18.163372,-0.736758471
+	persistentId = 3710544193
+	pos = -0.626790702,16.6442871,-0.678915262
 	attPos = 0,0,0
-	attPos0 = -0.680000007,-6.46543121,-0.736000001
+	attPos0 = -0.632740021,-6.01608276,-0.684848011
 	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,-0.707106829,0,0.707106829
@@ -2756,8 +2252,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd0210_4293229174
-	attN = top,rn.protonk.stg2_4293229646
+	sym = rn.proton.rd0210_4293005812
+	attN = top,rn.protonk.stg2_4293006276_0|0.841172|0
 	EVENTS
 	{
 	}
@@ -2891,11 +2387,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd0210_4293229174
+	part = rn.proton.rd0210_4293005812
 	partName = Part
-	pos = 0.805302024,18.163372,0.735241592
+	persistentId = 527272736
+	pos = 0.638689339,16.6442871,0.690780401
 	attPos = 0,0,0
-	attPos0 = 0.680000007,-6.46543121,0.736000001
+	attPos0 = 0.632740021,-6.01608276,0.684848011
 	rot = 0,0.707106888,0,0.707106769
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,0.707106888,0,0.707106769
@@ -2913,8 +2410,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd0210_4293229296
-	attN = top,rn.protonk.stg2_4293229646
+	sym = rn.proton.rd0210_4293005932
+	attN = top,rn.protonk.stg2_4293006276_0|0.841172|0
 	EVENTS
 	{
 	}
@@ -3048,11 +2545,12 @@ PART
 }
 PART
 {
-	part = rn.proton.stg1.adapt_4293229052
+	part = rn.proton.stg1.adapt_4293005692
 	partName = Part
-	pos = 0.125301957,19.1335297,-0.000758389942
+	persistentId = 570812492
+	pos = 0.00594933098,17.5470181,0.00593257509
 	attPos = 0,0,0
-	attPos0 = 0,-5.49527359,0
+	attPos0 = 0,-5.11335182,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3070,9 +2568,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.protonk.stg1_4293228876
-	attN = top,rn.protonk.stg2_4293229646
-	attN = bottom,rn.protonk.stg1_4293228876
+	link = rn.protonk.stg1_4293005516
+	attN = top,rn.protonk.stg2_4293006276_0|1.01362|0
+	attN = bottom,rn.protonk.stg1_4293005516_0|-1.240036|0
 	EVENTS
 	{
 	}
@@ -3085,11 +2583,12 @@ PART
 }
 PART
 {
-	part = rn.protonk.stg1_4293228876
+	part = rn.protonk.stg1_4293005516
 	partName = Part
-	pos = 0.125301957,8.33238983,-0.000758389942
+	persistentId = 3870924908
+	pos = 0.00594933098,7.49656296,0.00593257509
 	attPos = 0,0,0
-	attPos0 = 0,-10.8011379,0
+	attPos0 = 0,-10.050457,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3107,25 +2606,25 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rn.proton.rd253_4293228648
-	link = rn.proton.rd253_4293228526
-	link = rn.proton.rd253_4293228404
-	link = rn.proton.rd253_4293228282
-	link = rn.proton.rd253_4293228160
-	link = rn.proton.rd253_4293228038
-	link = launchClamp1_4293227916
-	link = launchClamp1_4293227806
-	link = launchClamp1_4293227696
-	link = launchClamp1_4293227586
-	link = launchClamp1_4293227476
-	link = launchClamp1_4293227366
-	attN = top,rn.proton.stg1.adapt_4293229052
-	attN = eng1,rn.proton.rd253_4293228526
-	attN = eng2,rn.proton.rd253_4293228648
-	attN = eng3,rn.proton.rd253_4293228160
-	attN = eng4,rn.proton.rd253_4293228038
-	attN = eng5,rn.proton.rd253_4293228282
-	attN = eng6,rn.proton.rd253_4293228404
+	link = rn.proton.rd253_4293005288
+	link = rn.proton.rd253_4293005168
+	link = rn.proton.rd253_4293005048
+	link = rn.proton.rd253_4293004928
+	link = rn.proton.rd253_4293004808
+	link = rn.proton.rd253_4293004688
+	link = launchClamp1_4293004568
+	link = launchClamp1_4293004458
+	link = launchClamp1_4293004348
+	link = launchClamp1_4293004238
+	link = launchClamp1_4293004128
+	link = launchClamp1_4293004018
+	attN = top,rn.proton.stg1.adapt_4293005692_0|8.810421|0
+	attN = eng1,rn.proton.rd253_4293005168_1.89822|-6.138947|0
+	attN = eng2,rn.proton.rd253_4293005288_-1.89822|-6.138947|0
+	attN = eng3,rn.proton.rd253_4293004808_0.94911|-6.138947|1.643903
+	attN = eng4,rn.proton.rd253_4293004688_-0.94911|-6.138947|-1.643903
+	attN = eng5,rn.proton.rd253_4293005048_-0.94911|-6.138947|1.643903
+	attN = eng6,rn.proton.rd253_4293004928_0.94911|-6.138947|-1.643903
 	EVENTS
 	{
 	}
@@ -3181,11 +2680,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228648
+	part = rn.proton.rd253_4293005288
 	partName = Part
-	pos = -1.91469789,1.03372192,-0.000758389942
+	persistentId = 3227193312
+	pos = -1.8922708,0.705158234,0.00593257509
 	attPos = 0,0,0
-	attPos0 = -2.03999996,-7.298666,0
+	attPos0 = -1.89822006,-6.79140282,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3203,8 +2703,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228526
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293005168
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -3338,11 +2838,12 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228526
+	part = rn.proton.rd253_4293005168
 	partName = Part
-	pos = 2.16530204,1.03372192,-0.000758389942
+	persistentId = 385406453
+	pos = 1.90416944,0.705158234,0.00593257509
 	attPos = 0,0,0
-	attPos0 = 2.03999996,-7.298666,0
+	attPos0 = 1.89822006,-6.79140282,0
 	rot = 0,1,0,-4.37113883E-08
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.37113883E-08
@@ -3360,8 +2861,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228648
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293005288
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -3495,14 +2996,15 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228404
+	part = rn.proton.rd253_4293005048
 	partName = Part
-	pos = 1.14530194,1.03372192,-1.76744652
+	persistentId = 3046479897
+	pos = -0.943160832,0.705158234,1.64983582
 	attPos = 0,0,0
-	attPos0 = 1.01999998,-7.298666,-1.76668799
-	rot = 0,-0.866025388,0,0.5
-	attRot = 0,-0.866025507,0,0.50000006
-	attRot0 = 0,-0.866025388,0,0.5
+	attPos0 = -0.949110031,-6.79140282,1.64390326
+	rot = 0,0.50000006,0,0.866025448
+	attRot = 0,0.50000006,0,0.866025448
+	attRot0 = 0,0.50000006,0,0.866025448
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3517,8 +3019,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228282
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293004928
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -3652,14 +3154,15 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228282
+	part = rn.proton.rd253_4293004928
 	partName = Part
-	pos = -0.894698024,1.03372192,1.76592958
+	persistentId = 1318251454
+	pos = 0.95505935,0.705158234,-1.63797069
 	attPos = 0,0,0
-	attPos0 = -1.01999998,-7.298666,1.76668799
-	rot = 0,0.50000006,0,0.866025388
-	attRot = 0,-0.866025507,0,0.50000006
-	attRot0 = 0,0.50000006,0,0.866025388
+	attPos0 = 0.949110031,-6.79140282,-1.64390326
+	rot = 0,0.866025388,0,-0.500000119
+	attRot = 0,0.50000006,0,0.866025448
+	attRot0 = 0,0.866025388,0,-0.500000119
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3674,8 +3177,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228404
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293005048
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -3809,14 +3312,15 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228160
+	part = rn.proton.rd253_4293004808
 	partName = Part
-	pos = 1.14530194,1.03372192,1.76592958
+	persistentId = 132897115
+	pos = 0.95505935,0.705158234,1.64983582
 	attPos = 0,0,0
-	attPos0 = 1.01999998,-7.298666,1.76668799
-	rot = 0,0.866025388,0,0.5
-	attRot = 0,0.866025388,0,0.5
-	attRot0 = 0,0.866025388,0,0.5
+	attPos0 = 0.949110031,-6.79140282,1.64390326
+	rot = 0,0.866025448,0,0.50000006
+	attRot = 0,0.866025448,0,0.50000006
+	attRot0 = 0,0.866025448,0,0.50000006
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3831,8 +3335,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228038
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293004688
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -3966,14 +3470,15 @@ PART
 }
 PART
 {
-	part = rn.proton.rd253_4293228038
+	part = rn.proton.rd253_4293004688
 	partName = Part
-	pos = -0.894698024,1.03372192,-1.76744652
+	persistentId = 4794160
+	pos = -0.943160832,0.705158234,-1.63797069
 	attPos = 0,0,0
-	attPos0 = -1.01999998,-7.298666,-1.76668799
-	rot = 0,0.49999997,0,-0.866025388
-	attRot = 0,0.866025388,0,0.5
-	attRot0 = 0,0.49999997,0,-0.866025388
+	attPos0 = -0.949110031,-6.79140282,-1.64390326
+	rot = 0,0.5,0,-0.866025448
+	attRot = 0,0.866025448,0,0.50000006
+	attRot0 = 0,0.5,0,-0.866025448
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3988,8 +3493,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.proton.rd253_4293228160
-	attN = top,rn.protonk.stg1_4293228876
+	sym = rn.proton.rd253_4293004808
+	attN = top,rn.protonk.stg1_4293005516_0|0.6524592|0
 	EVENTS
 	{
 	}
@@ -4123,14 +3628,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227916
+	part = launchClamp1_4293004568
 	partName = Part
-	pos = 4.11878204,1.63008881,-0.000758091919
+	persistentId = 1522289743
+	pos = -3.75738502,1.03796387,0.00593305193
 	attPos = 0,0,0
-	attPos0 = 3.99347973,-6.70229912,3.09664756E-07
-	rot = 0.000404452119,0.707106769,0.000404452148,-0.70710665
+	attPos0 = -3.76333427,-6.45859718,2.72411853E-07
+	rot = -5.4190437E-08,0.707106829,5.41904406E-08,0.707106709
 	attRot = 0,0,0,1
-	attRot0 = 0.000404452119,0.707106769,0.000404452148,-0.70710665
+	attRot0 = -5.4190437E-08,0.707106829,5.41904406E-08,0.707106709
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4145,12 +3651,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227806
-	sym = launchClamp1_4293227696
-	sym = launchClamp1_4293227586
-	sym = launchClamp1_4293227476
-	sym = launchClamp1_4293227366
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004458
+	sym = launchClamp1_4293004348
+	sym = launchClamp1_4293004238
+	sym = launchClamp1_4293004128
+	sym = launchClamp1_4293004018
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4164,10 +3670,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = -0.000404452119,-0.707106769,-0.000404452148,-0.70710665
+		towerRot = 5.4190437E-08,-0.707106829,-5.41904406E-08,0.707106709
 		EVENTS
 		{
 		}
@@ -4232,14 +3738,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227806
+	part = launchClamp1_4293004458
 	partName = Part
-	pos = 2.12204218,1.63008881,-3.45921278
+	persistentId = 3222398901
+	pos = -1.8757174,1.03796387,3.26507592
 	attPos = 0,0,0
-	attPos0 = 1.99674022,-6.70229912,-3.45845461
-	rot = 0.000552491867,0.258819103,0.000148039762,-0.965925694
+	attPos0 = -1.8816669,-6.45859718,3.25914311
+	rot = -1.98350758E-08,0.965925872,7.40255217E-08,0.258818984
 	attRot = 0,0,0,1
-	attRot0 = 0.000552491867,0.258819103,0.000148039762,-0.965925694
+	attRot0 = -1.98350758E-08,0.965925872,7.40255217E-08,0.258818984
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4254,12 +3761,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227916
-	sym = launchClamp1_4293227696
-	sym = launchClamp1_4293227586
-	sym = launchClamp1_4293227476
-	sym = launchClamp1_4293227366
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004568
+	sym = launchClamp1_4293004348
+	sym = launchClamp1_4293004238
+	sym = launchClamp1_4293004128
+	sym = launchClamp1_4293004018
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4273,10 +3780,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = -0.000552491867,-0.258819103,-0.000148039762,-0.965925694
+		towerRot = 1.98350758E-08,-0.965925872,-7.40255217E-08,0.258818984
 		EVENTS
 		{
 		}
@@ -4341,14 +3848,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227696
+	part = launchClamp1_4293004348
 	partName = Part
-	pos = -1.87143815,1.63008881,-3.45921326
+	persistentId = 2550005747
+	pos = 1.88761723,1.03796387,3.26507497
 	attPos = 0,0,0
-	attPos0 = -1.9967401,-6.70229912,-3.45845509
-	rot = 0.000552491925,-0.258818984,-0.000148039762,-0.965925753
+	attPos0 = 1.88166785,-6.45859718,3.25914288
+	rot = 1.98350829E-08,0.965925813,7.40255146E-08,-0.258819163
 	attRot = 0,0,0,1
-	attRot0 = 0.000552491925,-0.258818984,-0.000148039762,-0.965925753
+	attRot0 = 1.98350829E-08,0.965925813,7.40255146E-08,-0.258819163
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4363,12 +3871,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227916
-	sym = launchClamp1_4293227806
-	sym = launchClamp1_4293227586
-	sym = launchClamp1_4293227476
-	sym = launchClamp1_4293227366
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004568
+	sym = launchClamp1_4293004458
+	sym = launchClamp1_4293004238
+	sym = launchClamp1_4293004128
+	sym = launchClamp1_4293004018
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4382,10 +3890,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = -0.000552491925,0.258818984,0.000148039762,-0.965925753
+		towerRot = -1.98350829E-08,-0.965925813,-7.40255146E-08,-0.258819163
 		EVENTS
 		{
 		}
@@ -4450,14 +3958,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227586
+	part = launchClamp1_4293004238
 	partName = Part
-	pos = -3.86817765,1.63008881,-0.000758330338
+	persistentId = 1041807782
+	pos = 3.76928353,1.03796387,0.00593209825
 	attPos = 0,0,0
-	attPos0 = -3.99347973,-6.70229912,3.95812094E-08
-	rot = 0.000404452119,-0.707106709,-0.000404452148,-0.707106709
+	attPos0 = 3.76333427,-6.45859718,-6.01634383E-07
+	rot = 5.41904441E-08,0.70710665,5.41904335E-08,-0.707106888
 	attRot = 0,0,0,1
-	attRot0 = 0.000404452119,-0.707106709,-0.000404452148,-0.707106709
+	attRot0 = 5.41904441E-08,0.70710665,5.41904335E-08,-0.707106888
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4472,12 +3981,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227916
-	sym = launchClamp1_4293227806
-	sym = launchClamp1_4293227696
-	sym = launchClamp1_4293227476
-	sym = launchClamp1_4293227366
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004568
+	sym = launchClamp1_4293004458
+	sym = launchClamp1_4293004348
+	sym = launchClamp1_4293004128
+	sym = launchClamp1_4293004018
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4491,10 +4000,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = -0.000404452119,0.707106709,0.000404452148,-0.707106709
+		towerRot = -5.41904441E-08,-0.70710665,-5.41904335E-08,-0.707106888
 		EVENTS
 		{
 		}
@@ -4559,14 +4068,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227476
+	part = launchClamp1_4293004128
 	partName = Part
-	pos = -1.87143815,1.63008881,3.45769691
+	persistentId = 324541522
+	pos = 1.88761628,1.03796387,-3.25321102
 	attPos = 0,0,0
-	attPos0 = -1.9967401,-6.70229912,3.45845509
-	rot = 0.000148039748,-0.965925753,-0.000552491925,-0.258819044
+	attPos0 = 1.8816669,-6.45859718,-3.25914359
+	rot = 7.40255217E-08,0.258818895,1.98350705E-08,-0.965925872
 	attRot = 0,0,0,1
-	attRot0 = 0.000148039748,-0.965925753,-0.000552491925,-0.258819044
+	attRot0 = 7.40255217E-08,0.258818895,1.98350705E-08,-0.965925872
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4581,12 +4091,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227916
-	sym = launchClamp1_4293227806
-	sym = launchClamp1_4293227696
-	sym = launchClamp1_4293227586
-	sym = launchClamp1_4293227366
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004568
+	sym = launchClamp1_4293004458
+	sym = launchClamp1_4293004348
+	sym = launchClamp1_4293004238
+	sym = launchClamp1_4293004018
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4600,10 +4110,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = -0.000148039748,0.965925753,0.000552491925,-0.258819044
+		towerRot = -7.40255217E-08,-0.258818895,-1.98350705E-08,-0.965925872
 		EVENTS
 		{
 		}
@@ -4668,14 +4178,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293227366
+	part = launchClamp1_4293004018
 	partName = Part
-	pos = 2.12204123,1.63008881,3.45769739
+	persistentId = 3060405993
+	pos = -1.8757174,1.03796387,-3.25321078
 	attPos = 0,0,0
-	attPos0 = 1.99673927,-6.70229912,3.45845556
-	rot = -0.000148039704,-0.965925753,-0.000552491925,0.258818895
+	attPos0 = -1.8816669,-6.45859718,-3.25914335
+	rot = 7.40255146E-08,-0.258819073,-1.98350758E-08,-0.965925813
 	attRot = 0,0,0,1
-	attRot0 = -0.000148039704,-0.965925753,-0.000552491925,0.258818895
+	attRot0 = 7.40255146E-08,-0.258819073,-1.98350758E-08,-0.965925813
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4690,12 +4201,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4293227916
-	sym = launchClamp1_4293227806
-	sym = launchClamp1_4293227696
-	sym = launchClamp1_4293227586
-	sym = launchClamp1_4293227476
-	srfN = srfAttach,rn.protonk.stg1_4293228876
+	sym = launchClamp1_4293004568
+	sym = launchClamp1_4293004458
+	sym = launchClamp1_4293004348
+	sym = launchClamp1_4293004238
+	sym = launchClamp1_4293004128
+	srfN = srfAttach,rn.protonk.stg1_4293005516
 	EVENTS
 	{
 	}
@@ -4709,10 +4220,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.907243609
-		height = 2.28915024
+		scaleFactor = 0.67300123
+		height = 1.6981163
 		stagingEnabled = True
-		towerRot = 0.000148039704,0.965925753,0.000552491925,0.258818895
+		towerRot = -7.40255146E-08,0.258819073,1.98350758E-08,-0.965925813
 		EVENTS
 		{
 		}
@@ -4777,11 +4288,12 @@ PART
 }
 PART
 {
-	part = rn.salyut467.fairing_4293191282
+	part = rn.salyut467.fairing_4292991440
 	partName = Part
-	pos = 0.119029887,40.2562981,-0.00715837907
+	persistentId = 433728975
+	pos = 0.000122061167,38.157959,-2.26442371E-05
 	attPos = 0,0,0
-	attPos0 = 0.000127911568,-6.72521591,0
+	attPos0 = 0.00012794965,-6.72521591,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -4799,8 +4311,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.salyut467.fairing_4293189946
-	attN = top,salyut6_4293317286
+	sym = rn.salyut467.fairing_4292986952
+	attN = top,salyut6_4293127704_-1.660128|0|0
 	EVENTS
 	{
 	}
@@ -4879,11 +4391,12 @@ PART
 }
 PART
 {
-	part = rn.salyut467.fairing_4293189946
+	part = rn.salyut467.fairing_4292986952
 	partName = Part
-	pos = 0.118774064,40.2562981,-0.00715823378
+	persistentId = 51725705
+	pos = -0.000133761961,38.157959,-2.24991036E-05
 	attPos = 0,0,0
-	attPos0 = -0.000127911568,-6.72521591,1.45286322E-07
+	attPos0 = -0.000127873485,-6.72521591,1.45133072E-07
 	rot = 0,1,0,-4.37113883E-08
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.37113883E-08
@@ -4901,8 +4414,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = rn.salyut467.fairing_4293191282
-	attN = top,salyut6_4293317286
+	sym = rn.salyut467.fairing_4292991440
+	attN = top,salyut6_4293127704_-1.660128|0|0
 	EVENTS
 	{
 	}
@@ -4977,40 +4490,5 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
-	}
-}
-PART
-{
-	part = rn.proton.stg3.adapt_4293183278
-	partName = Part
-	pos = 0.118901975,37.4597321,-0.00715837907
-	attPos = 0,0,0
-	attPos0 = 0,3.6393528,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = bottom,rn.protonk.stg3.decoupler_4293230584
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
 	}
 }
