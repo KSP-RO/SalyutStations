@@ -16,9 +16,6 @@ KOSMOS is a dependency for it's Salyut solar arrays. Before anyone complains tha
 ##Install instructions:
 * Download and install mod from here
 
-* Install dependencies for KSP 1.2.x from here: https://www.dropbox.com/s/paqjbizbmxfhdqc/RN_Dependencies_KSP_v1.2.x.zip?dl=0
-* Install dependencies for KSP 1.3.x from here: https://www.dropbox.com/s/7yly4uu89bixvcl/RN_Dependencies_KSP_v1.3.x.zip?dl=0
-
 ##ALMAZ NOTES:
 * Please use the included craft file as the film capsule is difficult to place and the station requires the Salyut ASAS to function. I hid this inside the station mesh in the craft file.
 * The film capsule has NO SAS OR REACTION WHEELS, as it did in real life. You need to point the entire station so the capsule in facing retrograde before ejecting it. Once ejected fire the retro rockets. When it enters the atmosphere, drag will cause it to turn to face the right way for reentry. You then manually deploy the parachutes. Make sure it lands ON LAND.
